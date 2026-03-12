@@ -1,1 +1,30 @@
 
+/* Global site styles */
+body {
+    background-color: cadetblue;
+    color: aliceblue; /* ensure text is readable on blue background */
+    font-family: "Comic Sans MS", cursive, sans-serif; /* fun and playful font */
+}
+ /* center the main heading */
+ h1{
+display: block;
+width: fit-content;
+margin: 0 auto;
+border: 2px aliceblue dotted;
+padding: 10px;
+margin: 20px auto;
+background-color: rgb(12, 84, 108);
+ }
+img{
+    border: 20px solid rgb(12, 84, 108);
+    float: left;
+    margin: 10px;
+}   
+.right-float{
+    float: right;
+    margin-left: 20 px;
+    margin-right: 0;
+}
+h3{
+    clear: both; /* ensure h3 is below the floated image */
+}

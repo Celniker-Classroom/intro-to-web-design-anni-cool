@@ -28,3 +28,30 @@ img{
 h3{
     clear: both; /* ensure h3 is below the floated image */
 }
+.glow{
+    transition: filter 0.2s ease;
+}
+.glow:hover {
+    filter: drop-shadow(0 0 40px rgb(250, 212, 239));
+}
+/* unvisted links */
+a:link {
+    color: rgb(26, 93, 180);
+}
+/* visited links */
+a:visited {
+    color: rgb(26, 93, 180);
+}
+/* hover effect for links */
+a:hover {
+    color: rgb(250, 212, 239);
+    text-decoration: underline;
+}
+.hover-me{
+    background:rgb(26, 93, 180);
+    transition: background 0.3s ease;
+}
+.hover-me:hover {
+    background: rgb(250, 212, 239);
+    cursor: pointer;
+}

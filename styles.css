@@ -10,9 +10,10 @@ body {
 display: block;
 width: fit-content;
 margin: 0 auto;
-border: 2px aliceblue dotted;
-padding: 10px;
+padding: 20px;
 margin: 20px auto;
+color:aliceblue;
+border-radius: 10px;
 background-color: rgb(12, 84, 108);
  }
 img{
@@ -22,17 +23,17 @@ img{
 }   
 .right-float{
     float: right;
-    margin-left: 20 px;
+    margin-left: 20px;
     margin-right: 0;
 }
 h3{
-    clear: both; /* ensure h3 is below the floated image */
+    margin: 0;
 }
 .glow{
-    transition: filter 0.2s ease;
+    transition: filter 2s ease;
 }
 .glow:hover {
-    filter: drop-shadow(0 0 40px rgb(250, 212, 239));
+    filter: drop-shadow(0 0 70px rgb(252, 85, 185));
 }
 /* unvisted links */
 a:link {
@@ -40,7 +41,7 @@ a:link {
 }
 /* visited links */
 a:visited {
-    color: rgb(26, 93, 180);
+    color: rgb(7, 41, 87);
 }
 /* hover effect for links */
 a:hover {
@@ -55,12 +56,51 @@ a:hover {
     background: rgb(250, 212, 239);
     cursor: pointer;
 }
-.container {
+.container-1 {
+    background-color: rgb(185, 212, 221);
+    padding: 5px;
+    margin: 24px auto 8px;
+    border: 2px solid rgb(26, 76, 121);
+    color: rgb(26, 76, 121); /* ensure text is readable on blue background */
+    border-radius: 20px;
+    width: fit-content;
+    clear: both;
+
+}
+.container-2{
     background-color: rgb(185, 212, 221);
     padding: 5px;
     margin: 10px auto;
     border: 2px solid rgb(26, 76, 121);
     color: rgb(26, 76, 121); /* ensure text is readable on blue background */
     border-radius: 20px;
-    width: fit-content;
+}
+.image-series {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.flowers {
+    font-size: 4rem;
+    margin: 2px 0;
+}
+.title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.series-img {
+    float: none;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 4px solid rgb(26, 76, 121);
+    border-radius: 10px;
+    margin: 5px;
+}
+.section{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
 }

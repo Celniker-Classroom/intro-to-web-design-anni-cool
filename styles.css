@@ -3,6 +3,7 @@
 body {
     background-color: cadetblue;
     color: aliceblue; /* ensure text is readable on blue background */
+    font-size: 25px;
     font-family: "Comic Sans MS", cursive, sans-serif; /* fun and playful font */
 }
  /* center the main heading */
@@ -18,7 +19,6 @@ background-color: rgb(12, 84, 108);
  }
 img{
     border: 20px solid rgb(12, 84, 108);
-    float: left;
     margin: 10px;
 }   
 .right-float{
@@ -28,11 +28,17 @@ img{
 }
 h3{
     margin: 0;
+    padding: 20px;
 }
-.glow{
-    transition: filter 2s ease;
+
+.glow {
+    box-shadow: 0 0 20px rgba(252, 85, 185, 0.55);
+    transition: box-shadow 0.3s ease, filter 0.3s ease;
 }
-.glow:hover {
+
+.glow:hover,
+.glow:focus-visible {
+    box-shadow: 0 0 40px rgba(252, 85, 185, 0.9);
     filter: drop-shadow(0 0 70px rgb(252, 85, 185));
 }
 /* unvisted links */
@@ -59,14 +65,19 @@ a:hover {
 .container-1 {
     background-color: rgb(185, 212, 221);
     padding: 5px;
-    margin: 24px auto 8px;
+    margin: 0 0 8px 0;
     border: 2px solid rgb(26, 76, 121);
+    transition: border-color 0.25s ease;
     color: rgb(26, 76, 121); /* ensure text is readable on blue background */
     border-radius: 20px;
     width: fit-content;
-    clear: both;
-
 }
+
+.container-1:hover {
+    border-color: rgb(255, 184, 227);
+    border-width: 5px;
+}
+
 .container-2{
     background-color: rgb(185, 212, 221);
     padding: 5px;
@@ -81,7 +92,7 @@ a:hover {
     gap: 10px;
 }
 .flowers {
-    font-size: 4rem;
+    font-size: 6rem;
     margin: 2px 0;
 }
 .title-row {
@@ -103,4 +114,14 @@ a:hover {
     display: flex;
     align-items: flex-start;
     gap: 15px;
+    margin: 20px 0;
+}
+.section-content {
+    display: flex;
+    flex-direction: column;
+}
+.section p {
+    margin-top: 0;
+    font-size: 26px;
+    line-height: 1.6;
 }

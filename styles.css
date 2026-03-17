@@ -26,6 +26,22 @@ img{
     margin-left: 20px;
     margin-right: 0;
 }
+h2{
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Redressed', cursive;
+    padding: 10px;
+    margin: 10px auto;
+    color:aliceblue;
+    border-style: double;
+    border-inline-width: 5px;
+    border-width: 4px;
+    border-color: rgb(228, 100, 200)    ;
+  border-radius: 5px;
+    font-size: 19px;
+    width: fit-content;
+}
 h3{
     margin: 0;
     padding: 20px;

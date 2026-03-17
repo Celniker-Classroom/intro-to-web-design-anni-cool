@@ -141,45 +141,51 @@ a:hover {
     font-size: 26px;
     line-height: 1.6;
 }
-/* Media Query 1: Mobile devices (max-width 480px) */
-body{
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .section {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 20px;
+  }
+  h3 {
     font-size: 18px;
-}
-h1 {
-    font-size: 24px;
-}
-h3 {
-    font-size: 18px;
-}
-.section {
-    flex-direction: column;
-    gap: 10px;
-}
-img {
-    max-width: 100%;
-    border: 10px solid rgb(12, 84, 108);
-}
-.flowers {
-    font-size: 3rem;
-}    
-/* Media Query 2: Tablets (max-width 768px) */
-body {
-    font-size: 20px;                        
-}
-.section {
+  }
+  .section {
     flex-direction: column;
     gap: 12px;
-}
-.section p {
+  }
+  .section p {
     font-size: 20px;
+  }
 }
-img {
-    max-width: 90%;
-}       
-/* Media Query 3: Large screens (min-width 1024px) */
-.section {
-    gap: 25px;
-}
-.section p {
-    font-size: 26
+
+@media (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  img {
+    max-width: 100%;
+    border: 10px solid rgb(12, 84, 108);
+  }
+  .flowers {
+    font-size: 3rem;
+  }
+  .section {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

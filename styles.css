@@ -3,7 +3,7 @@
 body {
     background-color: cadetblue;
     color: aliceblue; /* ensure text is readable on blue background */
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Comic Sans MS", cursive, sans-serif; /* fun and playful font */
 }
  /* center the main heading */
@@ -138,7 +138,7 @@ a:hover {
 }
 .section p {
     margin-top: 0;
-    font-size: 26px;
+    font-size: 23px;
     line-height: 1.6;
 }
 
